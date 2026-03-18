@@ -1,0 +1,37 @@
+
+%----------------------------------------------------------------------------------------
+%   Хавсралтууд эндээс эхэлнэ
+%----------------------------------------------------------------------------------------
+\appendix
+\addcontentsline{toc}{part}{ХАВСРАЛТ}
+
+\chapter{Нэршлийн конвенц}
+\subfile{chapters/appendixtable.tex}
+
+\chapter{Буулгалтын загвар}
+
+\begin{lstlisting}[language=Java, caption=Хаан банкны гүйлгээний Excel хуулгын форматын буулгалтын загвар=single]
+{
+  "bankCode": "KHANBANK",
+  "sheet": 0,
+  "headerRowIndex": 6,
+  "mapping": {
+    "statement": {
+      "STATEMENT_ID": {"colIndex":"-1"},
+      "ACCOUNT_NO": {"colIndex":""}
+    },
+    "detail": {
+      "DETAIL_ID": {"colIndex":"-1"},
+      "STATEMENT_ID": {"colIndex":"-1"},
+      "TXN_DATE": {"colIndex":"0","type":"date"},
+      "PRE_BALANCE": {"colIndex":"2","type":"number"},
+      "DEBIT": {"colIndex":"3","type":"number"},
+      "CREDIT": {"colIndex":"4","type":"number"},
+      "POST_BALANCE": {"colIndex":"5","type":"number"},
+      "TXN_DESC": {"colIndex":"6"},
+      "CO_ACCOUNT": {"colIndex":"7"}
+    }
+  }
+}
+\end{lstlisting}
+% Хавсралтын нэр. Хавсралт гэдэг үг агуулахгүй
