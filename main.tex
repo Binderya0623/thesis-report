@@ -37,12 +37,27 @@
 \DeclarePairedDelimiter\abs{\lvert}{\rvert}%
 \makeatletter
 \usepackage{caption}
+\captionsetup{labelsep=period}
 \captionsetup[table]{belowskip=0.5pt}
 \usepackage{subfiles}
 
 \usepackage{listings}
 \renewcommand{\lstlistingname}{Код}
-\renewcommand{\lstlistlistingname}{\lstlistingname ын жагсаалт}
+\renewcommand{\lstlistlistingname}{КОДЫН ЖАГСААЛТ}
+\makeatletter
+\renewcommand{\lstlistoflistings}{%
+  \@cfttocstart
+    \par
+    \begingroup
+      \parindent\z@ \parskip\z@ \@plus .1\p@
+      \vspace*{\cftbeforeloftitleskip}%
+      {\cftloftitlefont\lstlistlistingname\cftafterloftitle}\par
+      \vspace*{\cftafterloftitleskip}%
+      \@starttoc{lol}%
+    \endgroup
+  \@cfttocfinish
+}
+\makeatother
 
 \usepackage{color}
 \definecolor{codegreen}{rgb}{0,0.6,0}
@@ -125,7 +140,7 @@ captionpos=b
 %----------------------------------------------------------------------------------------
 
 % Дипломийн ажлын сэдэв
-\title{Холимог Микрофронтэнд архитектур: React ба JSF ашигласан кейс судалгаа}
+\title{Холимог Микрофронтенд Архитектур: React ба JSF ашигласан кейс судалгаа}
 % Дипломын ажлын англи нэр
 \titleEng{Hybrid Microfrontend Architecture: A React and JSF Case Study}
 % Өөрийн овог нэрийг бүтнээр нь бичнэ

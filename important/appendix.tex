@@ -24,10 +24,10 @@
 \bottomrule
 \endfoot % Хуудас бүрийн төгсгөлд гарах зураас
 
-Microfrontend & Микрофронтэнд \\ 
+Microfrontend & Микрофронтенд \\ 
 Monolithic architecture & Цул архитектур \\ 
 Hybrid architecture & Холимог архитектур \\ 
-App-shell & Үндсэн аппликэйшн \\ 
+App-shell & Үндсэн хэрэглээний программ \\ 
 Proof of Concept (PoC) & Туршилтын загвар \\ 
 Prototype & Турших загвар \\ 
 Legacy system & Уламжлалт систем (эсвэл Хуучин систем) \\ 
@@ -69,11 +69,11 @@ Eventual consistency & Аажмын нийцэл \\
 \bottomrule
 \endfoot
 
-\textbf{Микрофронтэнд} & Вэб аппликэйшний хэрэглэгчийн интерфэйсийг (UI) бие даасан, жижиг модулиудад хувааж хөгжүүлэх орчин үеийн архитектурын хэв маяг. \\ 
-\textbf{Цул архитектур} & Программ хангамжийн хэрэглэгчийн интерфэйс, өгөгдлийн сан, бизнесийн логик зэрэг бүх бүрэлдэхүүн хэсгүүд нэг кодын санд, нэгдмэл байдлаар хөгжүүлэгддэг уламжлалт загвар. \\ 
+\textbf{Микрофронтенд} & Вэб хэрэглээний программын хэрэглэгчийн интерфэйсийг (UI) бие даасан, жижиг модулиудад хувааж хөгжүүлэх орчин үеийн архитектурын хэв маяг. \\ 
+\textbf{Цул архитектур} & Программ хангамжийн хэрэглэгчийн интерфейс, өгөгдлийн сан, бизнесийн логик зэрэг бүх бүрэлдэхүүн хэсгүүд нэг кодын санд, нэгдмэл байдлаар хөгжүүлэгддэг уламжлалт загвар. \\ 
 \textbf{Холимог архитектур} & Хоёр буюу түүнээс дээш ялгаатай технологи, архитектурын хэв маягийг (энэхүү судалгааны хувьд JSF болон React) нэг системд нэгтгэн ашиглах аргачлал. \\ 
 \textbf{Туршилтын загвар (PoC)} & Сонгосон технологи эсвэл архитектурын шийдэл бодит байдал дээр ажиллах боломжтой эсэхийг батлах зорилгоор хөгжүүлсэн анхан шатны хэрэгжүүлэлт. \\ 
-\textbf{Үндсэн аппликэйшн (App-shell)} & Микрофронтэндүүдийг дотроо агуулж, шаардлагатай үед динамикаар дуудаж ажиллуулах үүрэгтэй, хэрэглэгчийн интерфэйсийн үндсэн чиглүүлэгч программ. \\ 
+\textbf{Үндсэн хэрэглээний программ (App-shell)} & Микрофронтендүүдийг дотроо агуулж, шаардлагатай үед динамикаар дуудаж ажиллуулах үүрэгтэй, хэрэглэгчийн интерфэйсийн үндсэн чиглүүлэгч программ. \\ 
 \textbf{Custom Event Bus} & Хөтчийн санах ойг (Window object) ашиглан бие даасан бүрэлдэхүүн хэсгүүдийн хооронд өгөгдөл болон төлөв солилцох механизмыг хангадаг тусгайлсан суваг. \\ 
 
 \end{longtable}
@@ -93,17 +93,17 @@ Eventual consistency & Аажмын нийцэл \\
 \bottomrule
 \endfoot
 
-\textbf{JSF} & JavaServer Faces & Java хэл дээр суурилсан, серверийн талд хэрэглэгчийн интерфэйсийг угсарч хөтөч рүү илгээдэг вэб фрэймворк. \\ 
-\textbf{DOM} & Document Object Model & Вэб хуудсын бүтцийг мод хэлбэрээр дүрсэлж, программчлалын хэлээр хандах, өөрчлөлт оруулах боломжийг олгодог интерфэйс. \\ 
+\textbf{JSF} & JavaServer Faces & Java хэл дээр суурилсан, серверийн талд хэрэглэгчийн интерфэйсийг угсарч хөтөч рүү илгээдэг вэб фреймворк. \\ 
+\textbf{DOM} & Document Object Model & Вэб хуудсын бүтцийг мод хэлбэрээр дүрсэлж, программчлалын хэлээр хандах, өөрчлөлт оруулах боломжийг олгодог интерфейс. \\ 
 \textbf{DEMATEL} & Decision Making Trial and Evaluation Laboratory & Нарийн нийлмэл систем дэх хүчин зүйлсийн хоорондын шалтгаан, үр дагаврын хамаарлыг математик матриц ашиглан тооцоолдог шинжилгээний аргачлал. \\ 
 \textbf{QA} & Quality Attribute & Программ хангамжийн системийн хэр сайн ажиллаж байгааг тодорхойлдог хэмжигдэхүйц үзүүлэлт (жишээ нь: гүйцэтгэл, модульлаг байдал). \\ 
 \textbf{E2E} & End-to-End test & Программ хангамжийн системийг хэрэглэгчийн нүдээр, эхнээс нь дуустал бодит орчинд хэрхэн ажиллаж байгааг шалгах тестийн аргачлал. \\ 
-\textbf{UI/UX} & User Interface / User Experience & Хэрэглэгчийн интерфэйс (харагдах байдал) болон хэрэглэгчийн туршлага (ашиглахад хэр таатай, ойлгомжтой байх байдал). \\ 
+\textbf{UI/UX} & User Interface / User Experience & Хэрэглэгчийн интерфейс (харагдах байдал) болон хэрэглэгчийн туршлага (ашиглахад хэр таатай, ойлгомжтой байх байдал). \\ 
 \textbf{CSS} & Cascading Style Sheets & Вэб хуудсын өнгө, үзэмж, байршил зэрэг харагдах байдлыг тодорхойлдог хэл. \\ 
 \textbf{API} & Application Programming Interface & Хоёр өөр программ хангамж хоорондоо хэрхэн харилцан ажиллаж, мэдээлэл солилцохыг тодорхойлдог дүрэм, протокол. \\ 
 \end{longtable}
 
-\chapter{Микрофронтэнд хуудсууд}
+\chapter{Микрофронтенд хуудсууд}
 \begin{figure}[H]
   \centering
   \includegraphics[width=16cm]{images/mf3.png}
@@ -175,7 +175,7 @@ public class DefenseSessionController {
         this.repository = repository;
     }
 
-    // Canonical DB stage names + frontend aliases
+    // Canonical DB stage names + фронтенд aliases
     private static final Map<String, BigDecimal> STAGE_MAX_POINTS = Map.of(
             "PROGRESS_1",    BigDecimal.valueOf(15),
             "PROGRESS_2",    BigDecimal.valueOf(20),
@@ -185,7 +185,7 @@ public class DefenseSessionController {
             "FINAL_DEFENSE", BigDecimal.valueOf(40)
     );
 
-    // Map frontend aliases to DB-accepted values
+    // Map фронтенд aliases to DB-accepted values
     private static String canonicalStageType(String stageType) {
         if ("PRE_DEFENSE".equals(stageType))   return "PRELIMINARY";
         if ("FINAL_DEFENSE".equals(stageType)) return "FINAL";
@@ -510,15 +510,6 @@ export function useAuth() {
 \end{lstlisting}
 
 \begin{lstlisting}[language=JavaScript, caption={authGuard.ts}, label={lst:c5}]
-/**
- * authGuard.ts — Микрофронтэндийн нэвтрэлт болон дүрийн хамгаалалт
- *
- * Архитектурын тэмдэглэл:
- * - Нэвтрэлтийн мэдээлэл localStorage-д хадгалагддаг (module-auth тохируулна)
- * - Дүр тус бүрийн модуль mount хийхдээ энэ функцийг дуудна
- * - Нэвтрэлт байхгүй → login.xhtml руу redirect
- * - Буруу дүр → өөрийн дүрийн хуудас руу redirect
- */
 
 export type UserRole = 'admin' | 'teacher' | 'student';
 
