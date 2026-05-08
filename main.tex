@@ -45,17 +45,20 @@
 \renewcommand{\lstlistingname}{Код}
 \renewcommand{\lstlistlistingname}{КОДЫН ЖАГСААЛТ}
 \makeatletter
-\renewcommand{\lstlistoflistings}{%
-  \@cfttocstart
-    \par
+\AtBeginDocument{%
+  \renewcommand{\lstlistoflistings}{%
     \begingroup
-      \parindent\z@ \parskip\z@ \@plus .1\p@
-      \vspace*{\cftbeforeloftitleskip}%
-      {\cftloftitlefont\lstlistlistingname\cftafterloftitle}\par
-      \vspace*{\cftafterloftitleskip}%
-      \@starttoc{lol}%
+      \let\listfigurename\lstlistlistingname
+      \@cfttocstart
+      \par
+      \begingroup
+        \parindent\z@ \parskip\cftparskip
+        \@cftmakeloftitle
+        \@starttoc{lol}%
+      \endgroup
+      \@cfttocfinish
     \endgroup
-  \@cfttocfinish
+  }%
 }
 \makeatother
 
@@ -165,7 +168,7 @@ captionpos=b
 % Хэвлэгдсэн газар
 \cityName{Улаанбаатар хот}
 % Хэвлэгдсэн огноо
-\gradyear{2026 оны 4 сар}
+\gradyear{2026 оны 5 сар}
 % Дадлага хийж байгаа газрын  нэр
 % \company{Монгол Ай Ди}
 % Дадлага хийж байгаа газрын англи нэр
